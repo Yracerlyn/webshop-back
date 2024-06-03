@@ -13,7 +13,7 @@ var DATABASENAME = "webshop";
 var database;
 
 app.listen(5038, () => {
-    MongoClient.connect(CONNECTION_STRING, { useNewUrlParser: true, useUnifiedTopology: true }, (error, client) => {
+    MongoClient.connect(CONNECTION_STRING, {useNewUrlParser: true, useUnifiedTopology: true}, (error, client) => {
         if (error) {
             console.error('Failed to connect to the database. Exiting now...', error);
             process.exit();
